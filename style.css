@@ -6,3 +6,8 @@
   padding-left: 35%;
   margin: 5%;
 }
+
+@media (max-width: 480px) {
+  .form-design {
+    width: 100%;
+  }
