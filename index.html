@@ -6,37 +6,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Registration Form</title>
 
-    
+
 
 </head>
 
 <body class="bg">
 
-    <div>
+    <div class="form-design">
+        <h1>Registration Form</h1>
         <form id="stuRegForm" action="#" method="POST">
-            <div class="form-group">
-                <label for="stuname" class="pl-2 font-weight-bold">Name</label> <br />
-                <input type="text" class="form-control" placeholder="Name" name="stuname" id="stuname">
+            <div>
+                <label for="stuname">Name</label> <br />
+                <input type="text" placeholder="Name" name="stuname" id="stuname">
             </div> <br />
 
-            <div class="form-group">
-                <label for="stuemail" class="pl-2 font-weight-bold">Email</label> <br />
-                <input type="email" class="form-control" placeholder="Email" name="stuemail" id="stuemail"> <br />
-                <small class="form-text">We'll never share your email with anyone else.</small>
+            <div>
+                <label for="stuemail">Email</label> <br />
+                <input type="email" placeholder="Email" name="stuemail" id="stuemail" required> <br />
+                <small>We'll never share your email with anyone else.</small>
             </div> <br />
 
-            <div class="form-group">
-                <label for="stupass" class="pl-2 font-weight-bold">New Password</label> <br />
-                <input type="password" class="form-control" placeholder="Password" name="stupass" id="stupass" required>
+            <div>
+                <label for="stupass">New Password</label> <br />
+                <input type="password" placeholder="Password" name="stupass" id="stupass" required>
             </div> <br />
 
-            <div class="form-group">
-                <label for="stuconpass" class="pl-2 font-weight-bold">Confirm Password</label> <br />
-                <input type="password" class="form-control" placeholder="Password" name="stuconpass" id="stuconpass"
-                    required>
+            <div>
+                <label for="stuconpass">Confirm Password</label> <br />
+                <input type="password" placeholder="Password" name="stuconpass" id="stuconpass" required>
             </div> <br />
 
             <input type="submit" name="submit" value="Sign Up">
@@ -44,15 +45,9 @@
 
         </form>
     </div>
-    <div>
-        <img src="images/top-banner.png" alt="">
-    </div>
 
-    <div>
-        <a href="google.com">VIsit Google</a>
-    </div>
 
-    
+
 
 </body>
 

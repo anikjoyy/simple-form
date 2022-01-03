@@ -1,0 +1,8 @@
+.form-design {
+  border: 5px solid red;
+  background-image: url('images/top-banner.png');
+  background-repeat: no-repeat;
+  padding: 8%;
+  padding-left: 35%;
+  margin: 5%;
+}
