@@ -17,38 +17,79 @@
 <body class="bg">
 
     <div class="form-design">
+
         <h1>Registration Form</h1>
-        <form id="stuRegForm" action="#" method="POST">
+
+        <form class="form-class" id="stuRegForm" action="#" method="POST">
             <div>
-                <label for="stuname">Name</label> <br />
-                <input type="text" placeholder="Name" name="stuname" id="stuname">
+                <label for="stufname">First Name</label> <br />
+                <input type="text" placeholder="enter your name" name="stufname" id="stufname">
+            </div> <br />
+
+            <div>
+                <label for="stulname">Last Name</label> <br />
+                <input type="text" placeholder="enter your name" name="stulname" id="stulname">
             </div> <br />
 
             <div>
                 <label for="stuemail">Email</label> <br />
-                <input type="email" placeholder="Email" name="stuemail" id="stuemail" required> <br />
+                <input type="email" placeholder="enter your email address" name="stuemail" id="stuemail" required>
+                <br />
                 <small>We'll never share your email with anyone else.</small>
             </div> <br />
 
             <div>
                 <label for="stupass">New Password</label> <br />
-                <input type="password" placeholder="Password" name="stupass" id="stupass" required>
+                <input type="password" placeholder="enter your password" name="stupass" id="stupass" required>
             </div> <br />
 
             <div>
                 <label for="stuconpass">Confirm Password</label> <br />
-                <input type="password" placeholder="Password" name="stuconpass" id="stuconpass" required>
+                <input type="password" placeholder="enter your password" name="stuconpass" id="stuconpass" required>
             </div> <br />
 
-            <input type="submit" name="submit" value="Sign Up">
-            <input type="reset" value="Reset">
+            <div>
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <input type="radio" name="gender" id="other" value="other">Other
+            </div> <br />
+
+            <div>
+                <label for="mobile">Mobile Number</label><br>
+                <input type="number" name="mobile" id="mobile">
+            </div><br />
+
+            <div>
+                <label for="department">Department</label><br>
+                <select name="department" id="department">
+                    <option selected="true" disabled="disabled">select your department
+                    </option>
+                    <option value="cse">Computer Science & Engineering</option>
+                    <option value="eee">Electrical and Electronics Engineering</option>
+                    <option value="phar">Pharmacy</option>
+                    <option value="eng">English</option>
+                    <option value="bba">Bachelor of Business Administration</option>
+                </select>
+            </div><br />
+
+            <div>
+                <label for="preaddress">Present Address</label><br>
+                <textarea name="preaddress" id="preaddress" cols="30" rows="10">
+                            </textarea>
+            </div><br />
+
+            <div>
+                <label for="peraddress">Permanent Address</label><br>
+                <textarea name="peraddress" id="peraddress" cols="30" rows="10">
+                            </textarea>
+            </div>
+
+            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="reset" name="reset" id="reset">Reset</button>
 
         </form>
     </div>
-
-
-
-
 </body>
 
 </html>
